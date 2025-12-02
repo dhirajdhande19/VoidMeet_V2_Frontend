@@ -1,0 +1,454 @@
+/* 🌱 Base styles: Mobile-first (0 - 767px) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Lobby */
+
+.contaier {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.nav-section img {
+  height: 3vh;
+  width: auto;
+  max-height: 100%;
+}
+
+.nav-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-section h2 {
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
+.prevVideo {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  padding: 0.3rem;
+  height: auto;
+  margin-left: 0.8rem;
+}
+
+.headImg > img {
+  height: 15vh;
+  max-height: 100%;
+  width: auto;
+  border-radius: 1rem;
+}
+
+.prevVideo .heading {
+  font-size: 0.57rem;
+}
+
+.myVideo > video {
+  height: auto;
+  width: 83%;
+  max-height: 100%;
+  border-radius: 0.3rem;
+  margin: 2.2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.input-container {
+  width: 74vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.input-container h3 {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.input-container .err {
+  font-size: 0.6rem;
+  padding-inline: 2.5rem;
+}
+
+.askUsername {
+  display: flex;
+  align-items: center;
+}
+
+.inpField {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 0;
+  margin-left: 1.6rem;
+}
+
+.inpField label {
+  font-size: 0.7rem;
+}
+
+.inpField input {
+  height: 1.3rem;
+  font-size: 0.6rem;
+}
+
+.askUsername button {
+  height: 1.4rem;
+  width: auto;
+  font-size: 0.6rem;
+  border-radius: 1.5rem;
+}
+
+/* Room */
+
+.videoConatiner {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.userVideoContainer {
+  gap: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  padding: 0.3rem;
+  bottom: 10vh;
+  z-index: 1;
+  height: 30vh;
+  width: 30vw;
+}
+
+.userVideoContainer p {
+  margin-top: 7rem;
+  text-align: center;
+  z-index: inherit;
+}
+
+.userVideo {
+  position: absolute;
+  left: 1vh;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+.newVideos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.5rem;
+}
+
+.features {
+  position: absolute;
+  bottom: 1vh;
+}
+
+#endCall {
+  background-color: rgb(255, 87, 87);
+}
+
+.newUserVideo {
+  height: 15vh;
+  border-radius: 0.3rem;
+}
+
+.chat-section {
+  background-color: rgb(202, 201, 238);
+  position: absolute;
+  right: 0;
+  bottom: 10vh;
+  height: 72%;
+  width: 67vw;
+  border-radius: 0.7rem;
+  font-size: 0.8rem;
+}
+
+.chat-section h3 {
+  text-align: center;
+  margin: 0.6rem;
+  margin-bottom: 0;
+}
+
+.chat-box {
+  border-radius: 0.7rem;
+  position: absolute;
+  bottom: 0.7vh;
+  left: 1vh;
+  background-color: rgb(202, 201, 238);
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.chat-msg > input {
+  height: 7vh;
+  width: 55vw;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 1rem;
+}
+
+.chats-display {
+  height: 75%;
+  overflow-y: scroll;
+  padding: 0.7rem;
+}
+
+.chats-display div {
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  border-radius: 0.3rem;
+}
+
+.chats-display > div:nth-child(odd) {
+  background-color: rgb(177, 175, 220);
+}
+
+.chats-display::-webkit-scrollbar {
+  background-color: rgb(202, 201, 238);
+  width: 0.7rem;
+}
+
+.chats-display::-webkit-scrollbar-thumb {
+  background-color: rgb(86, 83, 137);
+  border-radius: 1rem;
+}
+
+/* Tablet (≥ 768px) */
+@media (min-width: 768px) {
+  .nav-section img {
+    height: 5vh;
+  }
+
+  .nav-section h2 {
+    font-size: 2rem;
+  }
+
+  .heading > div:first-child {
+    font-size: 1.25rem;
+  }
+
+  .prevVideo .headImg img {
+    height: 20vh;
+  }
+  .input-container h3 {
+    font-size: 1.9rem;
+  }
+  .askUsername {
+    justify-content: center;
+  }
+  .inpField input {
+    font-size: 1.5rem;
+  }
+
+  .myVideo {
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+
+  .userVideoContainer p {
+    margin-top: 95%;
+    font-size: 1.5rem;
+    font-weight: 510;
+  }
+
+  .chat-box {
+    background-color: #fff;
+    width: 96.6%;
+  }
+  .chat-box svg {
+    font-size: 2.5rem;
+  }
+
+  .chat-msg input {
+    height: 4rem;
+    width: 60vw;
+    border-radius: 0.3rem;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    border: none;
+  }
+
+  .features svg {
+    font-size: 2.8rem;
+  }
+  .chat-section {
+    height: 70vh;
+    font-size: 1.5rem;
+  }
+
+  .chats-display {
+    height: 57vh;
+  }
+}
+
+/* Tablet landscape / small laptop  */
+@media (min-width: 1024px) {
+  .heading {
+    padding: 3.5rem;
+    margin: 0;
+    width: 100%;
+    height: 30vh;
+  }
+
+  .prevVideo {
+    height: 28vh;
+  }
+
+  .prevVideo .headImg img {
+    height: 30vh;
+  }
+
+  .input-container {
+    padding: 0;
+    width: 100%;
+  }
+  .askUsername {
+    justify-content: start;
+    margin-left: 20rem;
+  }
+  .input-container input {
+    width: 22vw;
+    font-size: 1rem;
+  }
+
+  .input-container h3 {
+    margin-left: 2rem;
+  }
+
+  .myVideo {
+    margin: 0;
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.2rem;
+  }
+  .err p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .userVideoContainer {
+    position: absolute;
+    bottom: 0.4vh;
+  }
+  .features svg {
+    font-size: 1.8rem;
+  }
+  .userVideoContainer p {
+    font-size: 1rem;
+    margin-top: 11rem;
+  }
+  .userVideo {
+    margin-left: 4rem;
+    width: 55%;
+  }
+  .newVideos {
+    gap: 0.5rem;
+  }
+  .newVideos .newUserVideo {
+    height: 30vh;
+  }
+  .chat-section {
+    height: 58vh;
+    width: 60vw;
+    font-size: 1.1rem;
+  }
+  .chats-display {
+    height: 40vh;
+  }
+
+  .chat-box {
+    width: 3%;
+  }
+  .chat-box svg {
+    font-size: 2rem;
+  }
+
+  .chat-msg input {
+    height: 1.8rem;
+    width: 55vw;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .features svg {
+    font-size: 1.7rem;
+  }
+}
+
+/* Desktop (≥ 1280px) */
+@media (min-width: 1280px) {
+  .heading {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .prevVideo .headImg > img {
+    height: 35vh;
+  }
+
+  .input-container {
+    margin-top: 9rem;
+    margin-bottom: 10rem;
+  }
+  .input-container h3 {
+    margin-left: 6rem;
+  }
+  .input-container .myVideo {
+    justify-content: center;
+    height: 45vh;
+  }
+  .err p {
+    font-size: 1.1rem;
+  }
+  .askUsername {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .input-container input {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  .askUsername button {
+    height: 2rem;
+    font-size: 0.85rem;
+  }
+}
+
+.contaier {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-color: #fafafa;
+}

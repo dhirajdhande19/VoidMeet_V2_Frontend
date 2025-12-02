@@ -1,0 +1,300 @@
+/* Navbar */
+
+.landingPageContiner {
+  height: 100vh;
+  width: 100vw;
+  background: url("/landingPage-bg-img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid white;
+  border-radius: 3rem;
+  height: 3.3rem;
+  position: fixed;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.nav-section-one,
+.nav-section-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.7rem;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+}
+
+.nav-section-one div,
+img,
+.nav-section-two div {
+  margin: 1.5rem;
+  padding: 1.5;
+  cursor: pointer;
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+}
+
+.login-btn {
+  height: 2rem;
+  width: 8rem;
+  background-color: #b76bff;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.7rem;
+  margin: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: white;
+  cursor: pointer;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.login-btn:hover {
+  background-color: #a43dff;
+  transform: rotate(5deg);
+  transition: ease-in 1ms;
+  font-weight: 520;
+}
+
+/* MainContainer */
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5rem;
+  padding-top: 4rem;
+}
+
+.left-container {
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-left: 3.5rem;
+}
+
+.right-container img {
+  height: 80vh;
+  width: auto;
+}
+
+.left-container button {
+  width: auto;
+  height: 3rem;
+  background-color: #b76bff;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 7rem;
+}
+
+.left-container button:hover {
+  background-color: #a43dff;
+  transition: ease-in 1ms;
+  font-weight: 520;
+  cursor: pointer;
+}
+
+/* Responsive Patches Below */
+
+/* Tablet Landscape (up to 1024px) */
+@media (max-width: 1024px) {
+  nav {
+    width: 90vw;
+  }
+
+  .mainContainer {
+    padding-inline: 5rem;
+  }
+
+  .left-container {
+    font-size: 1rem;
+    padding: 1rem;
+    margin-left: 3.5rem;
+    margin-top: 5rem;
+    padding-bottom: 0;
+  }
+  .right-container img {
+    height: 45vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  .left-container button {
+    margin-top: 0.9rem;
+  }
+  .nav-section-one,
+  .nav-section-two {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+}
+
+/* Tablet Portrait / Small Tablets (up to 768px) */
+@media (max-width: 768px) {
+  nav {
+    width: 90vw;
+  }
+
+  .nav-section-one,
+  .nav-section-two {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  .login-btn {
+    width: 5rem;
+    height: 1.6rem;
+    font-size: 1rem;
+  }
+
+  .left-container {
+    font-size: 0.8rem;
+    padding: 1rem;
+    margin-left: 0rem;
+    padding-bottom: 0;
+  }
+  .right-container img {
+    height: 50vh;
+  }
+  .left-container button {
+    margin-top: 0.9rem;
+    width: 5.5rem;
+    height: 1.8rem;
+    font-size: 0.7rem;
+  }
+}
+
+/* Large Phones (up to 600px) */
+@media (max-width: 600px) {
+  nav {
+    width: 60vw;
+  }
+
+  .nav-section-one {
+    font-size: 1.2rem;
+  }
+  .nav-section-two {
+    display: none;
+  }
+
+  .logo {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .login-btn {
+    width: 4rem;
+  }
+  .mainContainer {
+    padding-inline: 0;
+  }
+
+  .left-container {
+    font-size: 0.6rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 7rem;
+    padding: 0.5rem;
+  }
+  .right-container img {
+    height: 20vh;
+  }
+  .left-container button {
+    width: 6rem;
+    height: 1.7rem;
+    font-size: 0.7rem;
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 1279px) and (min-width: 1025px) {
+  /* Styles for small laptop screens (like 1025px) */
+  .right-container img {
+    height: 45vh;
+  }
+  .left-container {
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 7rem;
+    padding: 0.5rem;
+  }
+  nav {
+    width: 90vw;
+  }
+
+  .nav-section-one,
+  .nav-section-two {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .login-btn {
+    width: 6rem;
+    height: 1.9rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 625px) {
+  /* Styles for screens between 601px and 625px */
+  .right-container img {
+    height: 35vh;
+  }
+  .left-container {
+    font-size: 1rem;
+  }
+  nav {
+    width: 40vw;
+  }
+
+  .nav-section-one {
+    font-size: 1rem;
+  }
+
+  .nav-section-two {
+    display: none;
+  }
+
+  .logo {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .login-btn {
+    width: 6rem;
+    height: 1.9rem;
+    font-size: 1.1rem;
+  }
+}

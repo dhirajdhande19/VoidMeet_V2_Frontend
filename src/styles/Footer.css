@@ -1,0 +1,132 @@
+/* 🌱 Base styles: Mobile-first (0 - 767px) */
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+
+footer {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding-block: 1.8rem;
+}
+
+footer img {
+  height: 3vh;
+  max-height: 100%;
+  margin: 0;
+}
+footer h3 {
+  font-size: 1.1rem;
+}
+.para P {
+  font-size: 0.86rem;
+  text-align: center;
+}
+
+.top-section > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.7rem;
+  padding: 0.3rem;
+  gap: 1rem;
+}
+
+.middle-section p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.middle-section ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  list-style-type: none;
+}
+.middle-section li {
+  font-size: 0.6rem;
+}
+.middle-section a {
+  color: black;
+  text-decoration: none;
+}
+
+.bottom-section p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+/* 📱 Tablet portrait (≥ 768px) */
+@media (min-width: 768px) {
+  .top-section h3 {
+    font-size: 1.5rem;
+  }
+  .para p {
+    font-size: 1.1rem;
+  }
+  .middle-section div p {
+    font-size: 1rem;
+  }
+  .middle-section ul li {
+    font-size: 0.7rem;
+  }
+  .bottom-section p {
+    font-size: 0.9rem;
+  }
+  .middle-section {
+    width: 100%;
+  }
+  .middle-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* 💻 Tablet landscape / small laptops (≥ 1024px) */
+@media (min-width: 1024px) {
+  .middle-section {
+    width: 100%;
+  }
+  .middle-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* 🖥️ Desktop (≥ 1280px) */
+@media (min-width: 1280px) {
+  footer img {
+    height: 4vh;
+  }
+  .top-section h3 {
+    font-size: 1.7rem;
+  }
+  .para p {
+    font-size: 1.4rem;
+  }
+  .middle-section div p {
+    font-size: 1.3rem;
+  }
+  .middle-section ul li {
+    font-size: 0.9rem;
+  }
+  .bottom-section p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,203 @@
+/* 🌱 Base styles: Mobile-first (0 - 767px) */
+
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 1rem;
+  padding: 1rem;
+}
+.home-hero img {
+  width: 30vw;
+  border-radius: 0.5rem;
+  margin: 0;
+}
+.home-hero h2 {
+  font-size: 1.1rem;
+  font-weight: 620;
+}
+
+.generate-code-inp {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  align-content: center5;
+  font-size: 0.8rem;
+  gap: 0.5rem;
+  border: 1px solid black;
+  margin-inline-start: 5rem;
+  margin-block: 1rem;
+  width: fit-content;
+  border-radius: 0.3rem;
+}
+.generate-code h3,
+.have-code h3,
+.how-it-works h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+.generate-code-inp svg {
+  font-size: 1rem;
+}
+
+.generate-code-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.have-code {
+  display: flex;
+  flex-direction: column;
+}
+
+.have-code div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  margin-left: 5rem;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.have-code div input {
+  width: 8rem;
+  height: 1.6rem;
+  padding: 0.5rem;
+  margin-left: 0.8rem;
+}
+
+.how-it-works div {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem;
+  justify-content: space-evenly;
+}
+.how-it-works .step-1,
+.how-it-works .step-2,
+.how-it-works .step-3 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 0.5rem;
+  width: 6.5rem;
+  border-radius: 0.5rem;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.how-it-works h3 {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  font-weight: 550;
+}
+
+.how-it-works p {
+  font-size: 0.65rem;
+}
+
+/* 📱 Tablet portrait (≥ 768px) */
+@media (min-width: 768px) {
+  .home-hero img {
+    width: 35vw;
+  }
+  .home-hero h2 {
+    font-size: 1.7rem;
+  }
+  .generate-code,
+  .have-code,
+  .how-it-works {
+    margin-bottom: 3rem;
+  }
+
+  .generate-code h3,
+  .have-code h3,
+  .how-it-works h2 {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  .generate-code-inp svg {
+    font-size: 1.1rem;
+  }
+
+  .have-code div input {
+    width: 9rem;
+    height: 2rem;
+    margin-left: 0rem;
+  }
+  .how-it-works .step-1,
+  .how-it-works .step-2,
+  .how-it-works .step-3 {
+    width: 8.5rem;
+  }
+
+  .how-it-works h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .how-it-works h3 {
+    font-size: 1rem;
+  }
+
+  .how-it-works p {
+    font-size: 0.8rem;
+  }
+}
+
+/* 💻 Tablet landscape / small laptops (≥ 1024px) */
+@media (min-width: 1024px) {
+  .home-hero {
+    margin-top: 3.5rem;
+  }
+  .home-hero h2 {
+    font-size: 2rem;
+  }
+  .generate-code-inp {
+    margin-left: 12rem;
+    height: 3rem;
+  }
+
+  .generate-code h3,
+  .have-code h3,
+  .how-it-works h2 {
+    font-size: 1.7rem;
+    margin-left: 5rem;
+  }
+  .generate-code-inp svg {
+    font-size: 1.4rem;
+  }
+
+  .have-code div input {
+    width: 12rem;
+    height: 2.5rem;
+    margin-left: 6.5rem;
+  }
+  .how-it-works .step-1,
+  .how-it-works .step-2,
+  .how-it-works .step-3 {
+    width: 12rem;
+  }
+
+  .how-it-works h3 {
+    font-size: 1.3rem;
+  }
+
+  .how-it-works p {
+    font-size: 1rem;
+  }
+}
+
+/* 🖥️ Desktop (≥ 1280px) */
+@media (min-width: 1280px) {
+}

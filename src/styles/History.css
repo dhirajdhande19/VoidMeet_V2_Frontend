@@ -1,0 +1,47 @@
+/* 🌱 Base styles: Mobile-first (0 - 767px) */
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+}
+.history-container h3 {
+  font-size: 1.3rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 580;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.history-container svg {
+  font-size: 1.5rem;
+}
+
+.card-head {
+  font-weight: 550;
+  margin-bottom: 0.4rem;
+}
+
+.history-container .one-card {
+  text-align: center;
+}
+
+/* 📱 Tablet portrait (≥ 768px) */
+@media (min-width: 768px) {
+  .history-container .one-card {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+/* 💻 Tablet landscape / small laptops (≥ 1024px) */
+@media (min-width: 1024px) {
+}
+
+/* 🖥️ Desktop (≥ 1280px) */
+@media (min-width: 1280px) {
+}
