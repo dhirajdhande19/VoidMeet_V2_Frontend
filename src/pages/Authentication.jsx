@@ -7,6 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import TextField from "@mui/material/TextField";
 import { AuthContext } from "../contexts/AuthContext";
 import Snackbar from "@mui/material/Snackbar";
+import server from "../enviornment";
 
 const URL = `https://api.unsplash.com/photos/random?client_id=${import.meta.env.VITE_UNSPLASH_CLIENT_ID}`;
 
@@ -75,7 +76,7 @@ export default function Authentication() {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/auth/google`;
+    window.location.href = `${server}/api/v1/auth/google`;
   };
 
   return (
