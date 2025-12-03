@@ -54,13 +54,7 @@ export default function Footer() {
               </li>{" "}
               <li>
                 {" "}
-                <Link
-                  to={
-                    "https://github.com/dhirajdhande19/VoidMeet_V2_Frontend.git"
-                  }
-                >
-                  GitHub
-                </Link>
+                <Link to={"https://github.com/dhirajdhande19"}>GitHub</Link>
               </li>
             </ul>
           </div>

@@ -67,7 +67,23 @@ function History() {
         <h3>
           {" "}
           Your Meeting History{" "}
-          <button onClick={() => clearAll()}>clear all history</button>
+          <button
+            onClick={() => clearAll()}
+            style={{
+              padding: "8px 14px",
+              background: "#d9534f", // soft red (Bootstrap danger tone)
+              color: "white",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+              fontSize: "14px",
+              transition: "0.2s",
+            }}
+            onMouseEnter={(e) => (e.target.style.background = "#c9302c")} // darker red
+            onMouseLeave={(e) => (e.target.style.background = "#d9534f")}
+          >
+            clear all history
+          </button>
           <HistoryIcon />
         </h3>
       )}
@@ -81,7 +97,30 @@ function History() {
                   <p className="card-head">Meeting Details</p>
                   <p>Code: {e.meetingCode}</p>
                   <p>Date: {formatDate(e.date)}</p>
-                  <button onClick={() => clearOne(e._id)}>delete</button>
+                  <button
+                    onClick={() => clearOne(e._id)}
+                    style={{
+                      padding: "6px 12px",
+                      background: "white",
+                      color: "#d9534f",
+                      border: "1px solid #d9534f",
+                      borderRadius: "4px",
+                      cursor: "pointer",
+                      fontSize: "13px",
+                      transition: "0.2s",
+                      marginTop: "0.5rem",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.target.style.background = "#d9534f";
+                      e.target.style.color = "white";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.background = "white";
+                      e.target.style.color = "#d9534f";
+                    }}
+                  >
+                    delete
+                  </button>
                 </CardContent>
               </Card>
               <br />

@@ -594,12 +594,30 @@ export default function VideoMeeetComponent() {
             </div>
             <div className="askUsername">
               <div className="inpField">
-                <TextField
+                <label
+                  htmlFor="username-field"
+                  style={{
+                    fontSize: "14px",
+                    color: "#111",
+                    marginBottom: "4px",
+                  }}
+                >
+                  Enter username..
+                </label>
+
+                <input
+                  id="username-field"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  label="Enter username.."
-                  variant="standard"
-                  size="small"
+                  onKeyDown={(e) => e.key === "Enter" && connect()}
+                  style={{
+                    padding: "8px 4px",
+                    border: "none",
+                    borderBottom: "1px solid #ccc",
+                    outline: "none",
+                    background: "transparent",
+                    color: "#111",
+                  }}
                 />
               </div>
 
