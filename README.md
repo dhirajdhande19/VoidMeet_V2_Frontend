@@ -5,7 +5,7 @@ VoidMeet v2 is the improved frontend for a real-time video calling application b
 This version introduces **Google OAuth**, small UI touch-ups, an emoji picker in chat, and a cleaner authentication flow.
 
 👉 **Backend (v2):** [VoidMeet_V2_Backend](https://github.com/dhirajdhande19/VoidMeet_V2_Backend)  
-👉 **Live App:** [void-meet-v2-frontend.vercel.app](https://void-meet-v2-frontend.vercel.app)
+👉 **Live App:** [voidmeet.vercel.app](https://voidmeet.vercel.app)
 
 ---
 
